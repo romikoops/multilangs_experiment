@@ -11,7 +11,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'rails-i18n'
+gem 'rails-i18n', '~> 3.0.0'
 
 # To use debugger
 # gem 'debugger'
