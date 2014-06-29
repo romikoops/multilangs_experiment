@@ -1,0 +1,9 @@
+en:
+  activerecord:
+    models:
+      book: 'Book'
+    attributes:
+      book:
+        title: 'Title'
+        number_of_pages: 'Number of Pages'
+        price: 'Price'

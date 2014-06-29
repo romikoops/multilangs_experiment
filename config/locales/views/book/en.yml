@@ -1,0 +1,19 @@
+en:
+  views:
+    show: Show
+    edit: Edit
+    destroy: Destroy
+    are_you_sure: Are you sure?
+    back: Back
+    edit: Edit
+    book:
+      index:
+        title: Book List
+        new: New Book
+      edit:
+        title: Edit Book
+      new:
+        title: New Book
+      flash_messages:
+        book_was_successfully_created: 'The book has been created successfully.'
+        book_was_successfully_updated: 'The book has been updated successfully.'
