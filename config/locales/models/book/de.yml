@@ -1,9 +1,0 @@
-de:
-  activerecord:
-    models:
-      book: 'Buch'
-    attributes:
-      book:
-        title: 'Titel'
-        number_of_pages: 'Seitenanzahl'
-        price: 'Preis'

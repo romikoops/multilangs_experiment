@@ -1,0 +1,35 @@
+en:
+  activerecord:
+    attributes:
+      book:
+        number_of_pages: Number of Pages
+        price: Price
+        title: Title
+    models:
+      book: Book
+  views:
+    are_you_sure: Are you sure?
+    back: Back
+    book:
+      edit:
+        title: Edit Book
+      flash_messages:
+        book_was_successfully_created: The book has been created successfully.
+        book_was_successfully_updated: The book has been updated successfully.
+      index:
+        new: New Book
+        title: Book List
+      new:
+        title: New Book
+    destroy: Destroy
+    edit: Edit
+    show: Show
+  helpers:
+    label:
+      book:
+        number_of_pages: 
+        price:
+        title: 
+    submit:
+      book:
+        create: 

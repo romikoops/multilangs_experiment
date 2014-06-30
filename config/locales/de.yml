@@ -1,0 +1,36 @@
+de:
+  activerecord:
+    attributes:
+      book:
+        number_of_pages: Seitenanzahl
+        price: Preis
+        title: Titel
+    models:
+      book: Buch
+  views:
+    are_you_sure: Sind Sie sicher?
+    back: Zurück
+    book:
+      edit:
+        title: Buch editieren
+      flash_messages:
+        book_was_successfully_created: Das Buch wurde erfolgreich angelegt.
+        book_was_successfully_updated: Das Buch wurde erfolgreich aktualisiert.
+      index:
+        new: Neues Buch
+        title: Bücherliste
+      new:
+        title: Neues Buch
+    destroy: Löschen
+    edit: Editieren
+    show: Anzeigen
+    show1: 
+  helpers:
+    label:
+      book:
+        number_of_pages: 
+        price: 
+        title: 
+    submit:
+      book:
+        create: Create Buch
