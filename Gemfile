@@ -15,6 +15,8 @@ gem 'rails-i18n', '~> 3.0.0'
 gem 'localeapp'
 gem "i18n-js"
 
+gem 'globalize', '~> 3.1.0'
+
 group :development do
   gem "rspec", ">= 2.4.0"
   gem "bundler"

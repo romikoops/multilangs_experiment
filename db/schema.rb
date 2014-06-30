@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140629190708) do
+ActiveRecord::Schema.define(:version => 20140630000000) do
+
+  create_table "book_translations", :force => true do |t|
+    t.integer  "book_id"
+    t.string   "locale",     :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "title"
+  end
+
+  add_index "book_translations", ["book_id"], :name => "index_book_translations_on_book_id"
+  add_index "book_translations", ["locale"], :name => "index_book_translations_on_locale"
 
   create_table "books", :force => true do |t|
     t.string   "title"

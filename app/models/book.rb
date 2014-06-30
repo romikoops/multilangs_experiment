@@ -1,6 +1,8 @@
 class Book < ActiveRecord::Base
   attr_accessible :number_of_pages, :price, :title
 
+  translates :title
+
   validates :title,
             presence: true,
             uniqueness: true,
