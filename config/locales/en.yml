@@ -7,6 +7,15 @@ en:
         title: Title
     models:
       book: Book
+  helpers:
+    label:
+      book:
+        number_of_pages: 
+        price: 
+        title: 
+    submit:
+      book:
+        create: 
   views:
     are_you_sure: Are you sure?
     back: Back
@@ -24,12 +33,3 @@ en:
     destroy: Destroy
     edit: Edit
     show: Show
-  helpers:
-    label:
-      book:
-        number_of_pages: 
-        price:
-        title: 
-    submit:
-      book:
-        create: 

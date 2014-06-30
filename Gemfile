@@ -13,6 +13,7 @@ end
 gem 'jquery-rails'
 gem 'rails-i18n', '~> 3.0.0'
 gem 'localeapp'
+gem "i18n-js"
 
 group :development do
   gem "rspec", ">= 2.4.0"

@@ -14,3 +14,9 @@ A ruby translation project managed on [Locale](http://www.localeapp.com/) that's
 - The maintainer will then pull translations from the Locale project and push to Github.
 
 Happy translating!
+
+To actualize js locales:
+
+  rake js:locales
+  
+For details using js locales, see https://github.com/fnando/i18n-js  

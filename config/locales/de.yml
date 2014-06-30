@@ -7,6 +7,15 @@ de:
         title: Titel
     models:
       book: Buch
+  helpers:
+    label:
+      book:
+        number_of_pages: 
+        price: 
+        title: 
+    submit:
+      book:
+        create: Create Buch
   views:
     are_you_sure: Sind Sie sicher?
     back: Zurück
@@ -24,13 +33,3 @@ de:
     destroy: Löschen
     edit: Editieren
     show: Anzeigen
-    show1: 
-  helpers:
-    label:
-      book:
-        number_of_pages: 
-        price: 
-        title: 
-    submit:
-      book:
-        create: Create Buch
