@@ -14,7 +14,7 @@ gem 'jquery-rails'
 gem 'rails-i18n', '~> 3.0.0'
 gem 'localeapp'
 gem "i18n-js"
-gem 'locale_setter'
+gem 'http_accept_language'
 
 group :development do
   gem "rspec", ">= 2.4.0"

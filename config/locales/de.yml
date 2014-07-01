@@ -5,6 +5,8 @@ de:
         number_of_pages: Seitenanzahl
         price: Preis
         title: Titel
+        title_de: Title de
+        title_en: Title en
       user:
         locale: Locale
     models:
@@ -40,3 +42,4 @@ de:
   locale_name:
     de: 
     en: 
+  asdf: 
