@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <% Book.globalize_locales.each do |locale| %>
-<p>
-  <b><%= Book.human_attribute_name(:title, lang: t(locale, scope: :locale_name)) %>:</b>
-  <%= @book.send("title_#{locale}") %>
-</p>
+    <% attribute_name = "title_#{locale}"%>
+    <p>
+      <b><%= Book.human_attribute_name(attribute_name) %>:</b>
+      <%= @book.send(attribute_name) %>
+    </p>
 <% end %>
 
 <p>

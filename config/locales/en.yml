@@ -4,12 +4,11 @@ en:
       book:
         number_of_pages: Number of Pages
         price: Price
-        title: Title (in %{lang})
+        title: Title
+        title_de: Title (in German)
+        title_en: Title (in English)
     models:
       book: Book
-  locale_name:
-    en: English
-    de: German
   helpers:
     label:
       book:

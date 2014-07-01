@@ -17,6 +17,7 @@ gem "i18n-js"
 
 gem 'globalize', '~> 3.1.0'
 gem 'globalize-accessors'
+gem 'globalize3-validations'
 
 group :development do
   gem "rspec", ">= 2.4.0"
