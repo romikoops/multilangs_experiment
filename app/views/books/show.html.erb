@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b><%= Book.human_attribute_name(:title) %>:</b>
-  <%= @book.title %>
-</p>
+<% I18n.available_locales.each do |locale| %>
+    <% attribute_name = "title_#{locale}"%>
+    <p>
+      <b><%= Book.human_attribute_name(attribute_name) %>:</b>
+      <%= @book.send(attribute_name) %>
+    </p>
+<% end %>
 
 <p>
   <b><%= Book.human_attribute_name(:number_of_pages) %>:</b>

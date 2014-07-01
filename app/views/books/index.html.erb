@@ -2,7 +2,9 @@
 
 <table>
   <tr>
-    <th><%= Book.human_attribute_name(:title) %></th>
+    <% I18n.available_locales.each do |locale| %>
+        <th><%= Book.human_attribute_name("title_#{locale}") %></th>
+    <% end %>
     <th><%= Book.human_attribute_name(:number_of_pages) %></th>
     <th><%= Book.human_attribute_name(:price) %></th>
     <th></th>
@@ -12,7 +14,9 @@
 
   <% @books.each do |book| %>
       <tr>
-        <td><%= book.title %></td>
+        <% I18n.available_locales.each do |locale| %>
+            <td><%= book.send("title_#{locale}") %></td>
+        <% end %>
         <td><%= number_with_delimiter(book.number_of_pages) %></td>
         <td><%= number_to_currency(book.price) %></td>
         <td><%= link_to I18n.t('views.show'), book %></td>

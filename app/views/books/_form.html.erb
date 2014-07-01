@@ -10,10 +10,13 @@
         </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :title %><br />
-      <%= f.text_field :title %>
-    </div>
+    <% I18n.available_locales.each do |locale| %>
+        <% attribute_name = "title_#{locale}"%>
+        <div class="field">
+          <%= f.label attribute_name, Book.human_attribute_name(attribute_name) %>
+          <%= f.text_field attribute_name %>
+        </div>
+    <% end %>
     <div class="field">
       <%= f.label :number_of_pages %><br />
       <%= f.number_field :number_of_pages %>
