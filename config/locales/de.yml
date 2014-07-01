@@ -5,6 +5,8 @@ de:
         number_of_pages: Seitenanzahl
         price: Preis
         title: Titel
+      user:
+        locale: Locale
     models:
       book: Buch
   helpers:
@@ -13,6 +15,8 @@ de:
         number_of_pages: 
         price: 
         title: 
+      user:
+        locale: 
     submit:
       book:
         create: Create Buch
@@ -33,3 +37,6 @@ de:
     destroy: Löschen
     edit: Editieren
     show: Anzeigen
+  locale_name:
+    de: 
+    en: 

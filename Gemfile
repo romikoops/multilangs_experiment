@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.18'
-gem 'sqlite3'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -14,6 +14,7 @@ gem 'jquery-rails'
 gem 'rails-i18n', '~> 3.0.0'
 gem 'localeapp'
 gem "i18n-js"
+gem 'locale_setter'
 
 group :development do
   gem "rspec", ">= 2.4.0"

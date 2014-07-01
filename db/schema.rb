@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140629190708) do
+ActiveRecord::Schema.define(:version => 20140701142514) do
 
   create_table "books", :force => true do |t|
     t.string   "title"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(:version => 20140629190708) do
     t.decimal  "price",           :precision => 7, :scale => 2
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "session_id",                   :null => false
+    t.string   "locale",     :default => "de", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
 end
