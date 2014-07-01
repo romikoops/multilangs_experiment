@@ -25,7 +25,7 @@ class BooksController < ApplicationController
   # GET /books/new.json
   def new
     @book = Book.new
-
+    Book.globalize_locales.each {|locale| @book.translations.build locale: locale}
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @book }

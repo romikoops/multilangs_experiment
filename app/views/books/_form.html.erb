@@ -9,10 +9,13 @@
           </ul>
         </div>
     <% end %>
-
     <div class="field">
-      <%= f.label :title %><br />
-      <%= f.text_field :title %>
+      <%= f.label :title_en, Book.human_attribute_name(:title, lang: t(:en, scope: :locale_name)) %>
+      <%= f.text_field :title_en %>
+    </div>
+    <div class="field">
+      <%= f.label :title_de, Book.human_attribute_name(:title, lang: t(:de, scope: :locale_name)) %>
+      <%= f.text_field :title_de %>
     </div>
     <div class="field">
       <%= f.label :number_of_pages %><br />

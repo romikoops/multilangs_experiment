@@ -4,9 +4,12 @@ de:
       book:
         number_of_pages: Seitenanzahl
         price: Preis
-        title: Titel
+        title: Titel (in %{lang})
     models:
       book: Buch
+  locale_name:
+    en: Englisch
+    de: Deutsch
   helpers:
     label:
       book:
@@ -16,6 +19,7 @@ de:
     submit:
       book:
         create: Create Buch
+        update: 
   views:
     are_you_sure: Sind Sie sicher?
     back: Zurück
