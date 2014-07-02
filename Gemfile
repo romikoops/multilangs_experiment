@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.0.0"
 gem 'rails', '3.2.18'
 gem 'pg'
 
@@ -25,6 +25,10 @@ group :development do
   gem "bundler"
   gem "jeweler", "> 1.6.4"
   gem 'i18n-spec'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 # To use debugger
