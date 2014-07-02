@@ -9,7 +9,6 @@ en:
         title_en: 
       user:
         locale: 
-
     models:
       book: Book
   locale_name:
