@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def current_user
-    @user ||= User.find_or_create_by_session_id(session[:session_id])
+    @user ||= User.find_or_create_by_session_id(session[:session_id] || request.session_options[:id])
   end
 
   private
