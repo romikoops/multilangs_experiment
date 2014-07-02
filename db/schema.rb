@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140701133000) do
+ActiveRecord::Schema.define(:version => 20140701142514) do
 
   create_table "books", :force => true do |t|
     t.integer  "number_of_pages"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(:version => 20140701133000) do
     t.datetime "created_at",                                       :null => false
     t.datetime "updated_at",                                       :null => false
     t.hstore   "title_translations"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "session_id",                   :null => false
+    t.string   "locale",     :default => "de", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
 end

@@ -16,6 +16,7 @@ gem 'localeapp'
 gem "i18n-js"
 gem 'hstore_translate'
 gem 'activerecord-postgres-hstore', '~> 0.7.0' # For For ActiveRecord < 4.0 only!
+gem 'http_accept_language'
 
 group :development do
   gem "rspec", ">= 2.4.0"
