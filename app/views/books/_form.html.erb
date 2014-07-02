@@ -10,10 +10,10 @@
         </div>
     <% end %>
     <% Book.globalize_locales.each do |locale| %>
-        <% attribute = "title_#{locale}" %>
+        <% attribute_name = "title_#{locale}"%>
         <div class="field">
-          <%= f.label attribute, Book.human_attribute_name(attribute) %>
-          <%= f.text_field attribute %>
+          <%= f.label attribute_name, Book.human_attribute_name(attribute_name) %>
+          <%= f.text_field attribute_name %>
         </div>
     <% end %>
     <div class="field">

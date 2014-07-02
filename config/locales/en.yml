@@ -9,11 +9,12 @@ en:
         title_en: 
       user:
         locale: 
+
     models:
       book: Book
   locale_name:
-    de: 
-    en: 
+    en: English
+    de: German
   helpers:
     label:
       book:

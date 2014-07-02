@@ -4,11 +4,10 @@ class Book < ActiveRecord::Base
   translates :title
   globalize_accessors
 
-  validates :title,
-            presence: true,
-            uniqueness: true,
-            length: { within: 2..255 },
-            translation_presence: true
+  globalize_locales.each do |locale|
+    validates "title_#{locale}", length: { within: 2..255 }, presence: true
+  end
+  validates :title, :globalized_uniqueness => {:scope => :locale}
 
   validates :price,
             presence: true,
