@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20140701142514) do
 
   create_table "book_translations", :force => true do |t|
-    t.integer  "book_id"
+    t.integer  "book_id",    :null => false
     t.string   "locale",     :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

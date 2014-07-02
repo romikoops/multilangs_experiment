@@ -10,6 +10,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'uuid'
+
 gem 'jquery-rails'
 gem 'rails-i18n', '~> 3.0.0'
 gem 'localeapp'
