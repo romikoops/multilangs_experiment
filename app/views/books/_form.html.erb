@@ -9,14 +9,13 @@
           </ul>
         </div>
     <% end %>
-    <div class="field">
-      <%= f.label :title_en, Book.human_attribute_name(:title, lang: t(:en, scope: :locale_name)) %>
-      <%= f.text_field :title_en %>
-    </div>
-    <div class="field">
-      <%= f.label :title_de, Book.human_attribute_name(:title, lang: t(:de, scope: :locale_name)) %>
-      <%= f.text_field :title_de %>
-    </div>
+    <% Book.globalize_locales.each do |locale| %>
+        <% attribute = "title_#{locale}" %>
+        <div class="field">
+          <%= f.label attribute, Book.human_attribute_name(attribute) %>
+          <%= f.text_field attribute %>
+        </div>
+    <% end %>
     <div class="field">
       <%= f.label :number_of_pages %><br />
       <%= f.number_field :number_of_pages %>

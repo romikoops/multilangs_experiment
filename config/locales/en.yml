@@ -12,8 +12,8 @@ en:
     models:
       book: Book
   locale_name:
-    en: English
-    de: German
+    de: 
+    en: 
   helpers:
     label:
       book:
@@ -43,7 +43,4 @@ en:
     destroy: Destroy
     edit: Edit
     show: Show
-  locale_name:
-    de: 
-    en: 
   asdf: 

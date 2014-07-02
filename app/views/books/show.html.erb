@@ -2,7 +2,7 @@
 
 <% Book.globalize_locales.each do |locale| %>
 <p>
-  <b><%= Book.human_attribute_name(:title, lang: t(locale, scope: :locale_name)) %>:</b>
+  <b><%= Book.human_attribute_name("title_#{locale}") %>:</b>
   <%= @book.send("title_#{locale}") %>
 </p>
 <% end %>

@@ -3,8 +3,7 @@
 <table>
   <tr>
     <% Book.globalize_locales.each do |locale| %>
-    <th><%= Book.human_attribute_name(:title, lang: t(locale, scope: :locale_name)) %></th>
-    <th><%= Book.human_attribute_name(:title, lang: t(locale, scope: :locale_name)) %></th>
+    <th><%= Book.human_attribute_name("title_#{locale}") %></th>
     <% end %>
     <th><%= Book.human_attribute_name(:number_of_pages) %></th>
     <th><%= Book.human_attribute_name(:price) %></th>
