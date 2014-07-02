@@ -3,6 +3,8 @@ multilangs_experiment
 
 This is Rails application example with multi languages supporting
 
+Demo: http://murmuring-garden-1665.herokuapp.com/ (Globalize based version!)
+
 ### Backend part
 
 * [I18n](https://github.com/svenfuchs/i18n) - Internationalization (i18n) library for Ruby(base infrastructure for validation messages, table names, field names, test in views, etc.)
