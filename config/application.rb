@@ -41,7 +41,7 @@ module MultilangsExperiment
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml').to_s]
     config.i18n.default_locale = :de
 
-    # Available locales.
+    # Available locales(filter from rails-i18n all locales list).
     config.i18n.available_locales = [:en, :de]
 
     # Configure the default encoding used in templates for Ruby 1.9.
