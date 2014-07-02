@@ -1,17 +1,26 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: multilangs_experiment_development
+  username: postgres
+  password:
+  host: localhost
+  port: 5432
 
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: multilangs_experiment_test
+  username: postgres
+  password:
+  host: localhost
+  port: 5432
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: multilangs_experiment_production
+  username: postgres
+  password:
+  host: localhost
+  port: 5432
