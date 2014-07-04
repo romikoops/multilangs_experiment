@@ -4,11 +4,16 @@ de:
       book:
         number_of_pages: Seitenanzahl
         price: Preis
-        title: Titel (in %{lang})
-        title_de: Title (in Deutsch)
-        title_en: Title (in Englisch)
+        title: Titel
+        title_de: Title de
+        title_en: Title en
+      user:
+        locale: Locale
     models:
       book: Buch
+  locale_name:
+    en: Englisch
+    de: Deutsch
   helpers:
     label:
       book:
@@ -38,3 +43,4 @@ de:
     destroy: Löschen
     edit: Editieren
     show: Anzeigen
+  asdf: 

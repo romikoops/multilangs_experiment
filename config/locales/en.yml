@@ -5,16 +5,23 @@ en:
         number_of_pages: Number of Pages
         price: Price
         title: Title
-        title_de: Title (in German)
-        title_en: Title (in English)
+        title_de: 
+        title_en: 
+      user:
+        locale: 
     models:
       book: Book
+  locale_name:
+    en: English
+    de: German
   helpers:
     label:
       book:
         number_of_pages: 
         price: 
         title: 
+      user:
+        locale: 
     submit:
       book:
         create: 
@@ -36,3 +43,4 @@ en:
     destroy: Destroy
     edit: Edit
     show: Show
+  asdf: 

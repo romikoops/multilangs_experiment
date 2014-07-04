@@ -7,11 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p>
-  <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-  |
-  <%= link_to_unless I18n.locale == :de, "Deutsch", locale: :de %>
-</p>
+<!--<p>-->
+  <!--<%= link_to_unless I18n.locale == :en, "English", locale: :en %>-->
+  <!--|-->
+  <!--<%= link_to_unless I18n.locale == :de, "Deutsch", locale: :de %>-->
+<!--</p>-->
+<div>
+  <%= form_for @user, url: user_path(@user, locale: I18n.locale), html: {style: "float: right;", onchange: "this.submit()"} do |f| %>
+      <%= f.label :locale %>
+      <%= f.collection_select :locale, I18n.available_locales, :to_s, :to_s %>
+  <% end %>
+</div>
 <%= yield %>
 <script type="text/javascript">
     I18n.defaultLocale = "<%= I18n.default_locale %>";
