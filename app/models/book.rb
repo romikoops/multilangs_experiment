@@ -12,4 +12,6 @@ class Book < ActiveRecord::Base
   validates :price,
             presence: true,
             numericality: { greater_than: 0 }
+
+  default_scope ->{includes(:translations)} # resolving problem with eager loading
 end
