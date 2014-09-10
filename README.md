@@ -20,3 +20,5 @@ To actualize js locales:
   rake js:locales
   
 For details using js locales, see https://github.com/fnando/i18n-js  
+
+multilanguage-experiment.herokuapp.com
